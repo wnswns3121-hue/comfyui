@@ -56,7 +56,7 @@ VAE_MODELS=(
 
 )
 
-ESRGAN_MODELS=(
+UPSCALE_MODELS=(
 
 )
 
@@ -94,7 +94,7 @@ function provisioning_start() {
         "${VAE_MODELS[@]}"
     provisioning_get_models \
         "${WORKSPACE}/storage/stable_diffusion/models/esrgan" \
-        "${ESRGAN_MODELS[@]}"
+        "${UPSCALE_MODELS[@]}"
     provisioning_print_end
 }
 
